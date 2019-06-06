@@ -1,0 +1,98 @@
+body, h1, h2, h3, h4, h5, p, ul, li, ol, form, textarea, select {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    background: #FFFFFF;
+}
+main{
+    width: 900px;
+    height: auto;
+    margin: 20px auto;
+}
+main > .tab{
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+header h1{
+    text-align: center;
+    margin-top: 50px;
+}
+form{
+    width: 900px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3FB8AF;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+form input{
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+    margin-right: 670px;
+    outline-style: none;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+form .imp{
+    display: block;
+    height: 30px;
+}
+
+form .Submit{
+    display: block;
+    height: 30px;
+    background: #ffffff;
+    float: right;
+}
+.tab > li{
+    width: 300px;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+    transition: all ease-in 0.5s;
+}
+.tab > li.hot{
+    color: #FFFFFF;
+}
+.tab > .top1{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #3FB8AF;
+    transition: all ease-in 0.5s;
+}
+li.hot:nth-child(1) ~ .top1{
+    transform: translate(0,0);
+}
+li.hot:nth-child(2) ~ .top1{
+    transform: translate(100%,0);
+}
+li.hot:nth-child(3) ~ .top1{
+    transform: translate(200%,0);
+}
+.content > li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #3FB8AF;
+}
+.content >li>p{
+    display: inline-block;
+}
+.content >li>del{
+    float: right;
+}
+.content >li>time{
+    float: right;
+    margin-right: 20px;
+}
